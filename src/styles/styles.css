@@ -12,10 +12,6 @@
   visibility: visible;
 }
 
-.elem-display {
-  display: flex;
-}
-
 .selected {
   border-bottom: 2px solid #0763cd;
 }
