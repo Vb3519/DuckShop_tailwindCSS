@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuckShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-C_7vsRWL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DwZpHPc7.css">
+  </head>
+  <body>
+    <section
+      class="w-[375px] h-[800px] absolute flex flex-col bg-[#FFFFFF] md:w-[960px] md:h-[632px] xl:w-[1280px] xl:h-[720px]"
+    >
+      <!---------------------- ХЕАДЕР: ---------------------------->
+      <!----------------------------------------------------------->
+
+      <!----------------------------------------------------------->
+      <!-- НАВИГАЦИОННОЕ МЕНЮ (1280px): -->
+      <!----------------------------------------------------------->
+      <header
+        class="w-[343px] h-auto min-h-12 top-[5px] left-4 absolute md:w-[928px] md:h-[54px] md:top-4 md:left-4 xl:w-[1248px] xl:h-auto xl:min-h-12 z-40"
+      >
+        <div
+          class="w-full h-auto min-h-12 flex justify-between items-center pt-1 pb-1 md:w-full md:min-h-12"
+        >
+          <div class="w-[178px] h-10 flex items-center">
+            <img
+              class="w-10 h-10"
+              src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M28.6509%2018.0313C29.5036%2017.1375%2030.0756%2016.0134%2030.2962%2014.798C30.5168%2013.5827%2030.3763%2012.3293%2029.8922%2011.1929C29.408%2010.0565%2028.6014%209.08692%2027.572%208.40408C26.5427%207.72124%2025.3358%207.35507%2024.1005%207.35086C22.8653%207.34666%2021.6559%207.70459%2020.622%208.3804C19.588%209.05621%2018.7748%2010.0203%2018.2829%2011.1533C17.791%2012.2864%2017.642%2013.5388%2017.8543%2014.7557C18.0666%2015.9725%2018.631%2017.1005%2019.4775%2018H13.8922C13.8922%2018%209.69781%2018.0313%203.90625%2015.5897L7.32562%2026.2272C8.07682%2028.1189%209.37874%2029.7414%2011.0627%2030.8846C12.7467%2032.0279%2014.7352%2032.639%2016.7706%2032.6391H28.0159C28.9772%2032.6391%2029.929%2032.4497%2030.8171%2032.0819C31.7051%2031.714%2032.512%2031.1749%2033.1917%2030.4952C33.8714%2029.8155%2034.4106%2029.0086%2034.7784%2028.1205C35.1463%2027.2324%2035.3356%2026.2806%2035.3356%2025.3194C35.3353%2023.4885%2034.6485%2021.7243%2033.411%2020.375C32.1734%2019.0257%2030.475%2018.1894%2028.6509%2018.0313Z'%20fill='%23FFDD55'/%3e%3cpath%20d='M11.0713%2019.9266C11.0713%2019.9266%2015.0863%2022.3497%2018.2063%2021.1141C23.4919%2019.0203%2026.7397%2021.9556%2026.7397%2025.5063C26.7397%2028.6328%2023.2504%2030.4984%2020.2682%2030.2991C14.5182%2029.9153%2011.6916%2025.4238%2011.0713%2019.9266Z'%20fill='%23FFEA98'/%3e%3cpath%20d='M30.3334%2012.7919C30.3334%2012.7919%2029.3959%2016.4397%2026.7422%2017.9997C26.7422%2017.9997%2032.7447%2018.6497%2036.0938%2014.0181L30.3334%2012.7919Z'%20fill='%23EAB308'/%3e%3cpath%20d='M25.6798%2012.5222C26.0528%2012.5222%2026.3551%2012.2198%2026.3551%2011.8469C26.3551%2011.4739%2026.0528%2011.1716%2025.6798%2011.1716C25.3069%2011.1716%2025.0045%2011.4739%2025.0045%2011.8469C25.0045%2012.2198%2025.3069%2012.5222%2025.6798%2012.5222Z'%20fill='%231E1E1E'/%3e%3cpath%20d='M28.0161%2032.6391C28.9773%2032.6391%2029.9291%2032.4497%2030.8172%2032.0819C31.7053%2031.714%2032.5122%2031.1749%2033.1919%2030.4952C33.8716%2029.8155%2034.4107%2029.0086%2034.7786%2028.1205C35.1464%2027.2324%2035.3358%2026.2806%2035.3358%2025.3194C35.3354%2023.4885%2034.6487%2021.7243%2033.4111%2020.375C32.1736%2019.0257%2030.4751%2018.1894%2028.6511%2018.0312C29.3137%2017.3469%2029.8097%2016.519%2030.1006%2015.612C30.3916%2014.7049%2030.4697%2013.743%2030.3289%2012.8009C30.2311%2013%2028.1305%2017.1003%2022.0314%2018.0312C15.7814%2018.9847%2015.0995%2027.125%2025.4014%2028.5234C35.7033%2029.9219%2028.0161%2032.6391%2028.0161%2032.6391Z'%20fill='%23FFC955'/%3e%3cpath%20d='M26.7396%2025.5062C26.7396%2021.9556%2023.4917%2019.02%2018.2061%2021.1141C18.0326%2021.182%2017.8552%2021.2395%2017.6749%2021.2862C16.758%2024.0428%2018.8705%2027.6362%2025.4005%2028.5231C25.819%2028.1392%2026.1539%2027.6732%2026.3843%2027.1542C26.6147%2026.6351%2026.7356%2026.0741%2026.7396%2025.5062Z'%20fill='%23FFDD55'/%3e%3c/svg%3e"
+              alt="website logo"
+            />
+            <div class="w-[126px] h-[31px] tracking-tighter">
+              <span
+                class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#EAB308]"
+                >Duck</span
+              ><span
+                class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#2581EB]"
+                >Shop</span
+              >
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <nav
+              class="xl:w-[620px] xl:h-auto xl:min-h-[38px] xl:flex justify-center hidden"
+            >
+              <ul
+                class="w-auto items-center gap-2 xl:flex xl:flex-row xl:gap-5 font-[inter] font-[500] text-[14px] leading-5 tracking-[0.5%]"
+              >
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[57px] min-h-[38px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer"
+                >
+                  <a
+                    class="w-auto h-auto min-w-[57px] min-h-5 hover:text-[#439FFF]"
+                    src="#"
+                    >Главная</a
+                  >
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[84px] min-h-[36px] border-b-2 border-solid border-white flex items-center gap-x-2 p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a class="w-auto h-auto min-w-[56px] min-h-5" src="#"
+                    >Каталог</a
+                  >
+                  <svg
+                    class="w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[33px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Блог</a>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Отзывы</a>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[67px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div
+              class="w-auto h-auto min-w-[92px] min-h-10 md:w-[336px] md:h-10"
+            >
+              <ul class="w-full flex items-center justify-end gap-3 md:gap-5">
+                <li class="w-10 h-10 rounded-[8px]">
+                  <a
+                    class="w-[38px] h-[38px] rounded-[8px] flex items-center justify-center border-1 border-transparent hover:border-[#2581EB] active:border-[#0763CD] group"
+                    href="#"
+                  >
+                    <svg
+                      class="w-4 h-4 group-hover:text-[#2581EB] group-active:text-[#0763CD]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <button
+                    class="popup-form-btn w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-3 bg-[#EAB308] cursor-pointer font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] md:block hidden hover:bg-[#FEC71C] active:bg-[#CC9500]"
+                  >
+                    Заказать обратный звонок
+                  </button>
+                </li>
+
+                <li class="w-10 h-10 xl:hidden">
+                  <button
+                    id="menu-btn"
+                    class="min-w-[38px] min-h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[#FFDD55] shadow-[0px_1px_2px_0px_#0000000D] hover:bg-[#FFDD55] active:bg-[#EAB308] cursor-pointer group"
+                  >
+                    <svg
+                      class="w-[19px] h-[19px] group-active:text-[#FFFFFF]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- прозрачный фон (под меню): -->
+      <div
+        id="app-header-menu-active-layer"
+        class="w-[375px] h-[800px] absolute bg-gray-300 opacity-70 z-10 md:w-[960px] xl:hidden invisible"
+      ></div>
+      <!-- прозрачный фон (под меню): -->
+
+      <!------------------------------------------------->
+      <!---- НАВИГАЦИЯ (МЕНЮ-ШТОРКА 375px, 960px): ------>
+      <!------------------------------------------------->
+      <div
+        id="mobile-menu-container"
+        class="w-[375px] h-[391px] rounded-bl-xl relative rounded-br-xl flex flex-col gap-8 py-[5px] px-4 bg-[#FFFFFF] z-20 md:w-[960px] xl:hidden max-h-0 opacity-0"
+      >
+        <div
+          id="mobile-menu-content"
+          class="h-auto w-[343px] min-height-[272px] absolute top-[85px] flex flex-col gap-5 md:w-[928px] md:top-[70px] opacity-0"
+        >
+          <nav class="w-auto h-auto min-w-[67px] min-h-[214px]">
+            <ul
+              class="w-auto flex flex-col items-center gap-2 font-[Inter] font-[500] text-[14px] leading-5 tracking-[0.5%] text-[#1F2937] md:gap-[30px] md:text-[16px]"
+            >
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[57px] min-h-[38px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Главная</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Каталог</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[33px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Блог</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Отзывы</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[67px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="popup-form-btn w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-3 bg-[#EAB308] mx-auto font-[Inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer md:hidden"
+          >
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+
+      <!---------------------- МЕИН: ---------------------------->
+      <!--------------------------------------------------------->
+      <main class="w-full">
+        <h1
+          class="font-[jura] font-[700] text-[92px] leading-[80%] tracking-[0px] uppercase text-[#1E1E1E] md:text-[152px]"
+        >
+          <span
+            class="w-[297px] h-[74px] inline-block absolute top-[99px] left-4 leading-[80%] md:w-[490px] md:h-[122px] md:top-[122px] md:left-4 xl:h-[152px] xl:top-[140px] xl:leading-[100%]"
+            >много</span
+          ><span
+            class="w-[333px] h-[74px] inline-block absolute top-[177px] left-4 md:w-[550px] md:h-[122px] md:top-[244px] md:left-4 xl:h-[152px] xl:top-[232px] xl:left-[714px] xl:leading-[100%]"
+            >уточек</span
+          >
+        </h1>
+
+        <div
+          class="w-[343px] h-auto min-h-[86px] flex flex-col absolute top-[283px] left-4 gap-2 opacity-[80%] md:w-[315px] md:top-[398px] xl:top-[392px] xl:left-[853px] xl:z-10"
+        >
+          <p
+            class="w-[343px] h-10 font-[inter] font-[400] text-[16px] leading-[16px] tracking-[0.5%] text-[#1F2937]"
+          >
+            Маленький друг найдётся для каждого в этом кряквенно жёлтом мире
+          </p>
+          <button
+            class="w-auto h-auto min-w-[156px] min-h-[38px] rounded-[8px] bg-[#2581EB] mr-[auto] py-[10px] px-3 font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#439FFF] active:bg-[#0763CD] cursor-pointer"
+          >
+            Смотреть уточек
+          </button>
+        </div>
+
+        <!---------------------- бэкграунд картинки: ---------------------------->
+        <!----------------------------------------------------------------------->
+        <img
+          class="w-[64px] h-[56px] absolute top-[428px] left-[162px] md:w-[120px] md:h-[108px] md:top-[274px] md:left-[601px] xl:top-[332px] xl:left-[282px]"
+          src="data:image/svg+xml,%3csvg%20width='120'%20height='108'%20viewBox='0%200%20120%20108'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M75.5398%204.61617C102.716%2016.6628%20115.016%2048.5383%20103.012%2075.8123C91.0089%20103.086%2059.2479%20115.43%2032.072%20103.384C4.89613%2091.3372%20-7.40371%2059.4617%204.59958%2032.1877C16.6029%204.91379%2048.3639%20-7.43041%2075.5398%204.61617Z'%20fill='%23FFDD55'/%3e%3cpath%20d='M83.881%2025.0465L120%2029.5817L98.5703%2057.2418L83.881%2025.0465Z'%20fill='%23FFDD55'/%3e%3cpath%20d='M35.2884%2068.5748L25.3268%2055.2259H21.761V68.5748H18.2518V39.4912H21.761V52.1017H23.2892L34.8922%2039.4912H39.0805L27.3644%2052.2721L39.4767%2068.5748H35.2884Z'%20fill='white'/%3e%3cpath%20d='M44.0118%2068.5748V39.4912H53.8035C56.077%2039.4912%2057.9353%2039.903%2059.3786%2040.7267C60.8313%2041.5409%2061.9067%2042.6438%2062.6048%2044.0355C63.3029%2045.4272%2063.6519%2046.9798%2063.6519%2048.6934C63.6519%2050.407%2063.3029%2051.9644%2062.6048%2053.3656C61.9162%2054.7667%2060.8502%2055.8839%2059.4069%2056.717C57.9636%2057.5406%2056.1147%2057.9525%2053.8601%2057.9525H46.8418V54.8283H53.7469C55.3034%2054.8283%2056.5533%2054.5584%2057.4967%2054.0188C58.44%2053.4792%2059.1239%2052.7502%2059.5484%2051.8319C59.9824%2050.9041%2060.1993%2049.8579%2060.1993%2048.6934C60.1993%2047.529%2059.9824%2046.4875%2059.5484%2045.5692C59.1239%2044.6509%2058.4353%2043.9314%2057.4825%2043.4107C56.5298%2042.8805%2055.2657%2042.6154%2053.6903%2042.6154H47.521V68.5748H44.0118Z'%20fill='white'/%3e%3cpath%20d='M89.0015%2068.5748H85.4923V42.6154H79.323C77.757%2042.6154%2076.4977%2042.8568%2075.5449%2043.3397C74.5922%2043.813%2073.8988%2044.4852%2073.4649%2045.3562C73.031%2046.2272%2072.814%2047.2449%2072.814%2048.4094C72.814%2049.5739%2073.0262%2050.5774%2073.4507%2051.42C73.8847%2052.2531%2074.5733%2052.8969%2075.5166%2053.3514C76.4694%2053.8058%2077.7193%2054.033%2079.2664%2054.033H87.0771V57.214H79.1532C76.908%2057.214%2075.0638%2056.8401%2073.6205%2056.0921C72.1772%2055.3348%2071.1066%2054.2934%2070.4085%2052.9679C69.7104%2051.6425%2069.3614%2050.123%2069.3614%2048.4094C69.3614%2046.6958%2069.7104%2045.1669%2070.4085%2043.8225C71.1066%2042.4781%2072.182%2041.4225%2073.6347%2040.6557C75.0874%2039.8794%2076.9458%2039.4912%2079.2098%2039.4912H89.0015V68.5748ZM75.361%2055.5099H79.323L72.3046%2068.5748H68.2294L75.361%2055.5099Z'%20fill='white'/%3e%3c/svg%3e"
+        />
+        <img
+          class="w-[343px] h-[343px] absolute top-[307px] left-[185px] md:w-[577px] md:h-[577px] md:top-[62px] md:left-[655px] xl:w-[620px] xl:h-[620px] xl:top-[117px] xl:left-[320px]"
+          src="/assets/background_img-C1Ti0WfY.png"
+        />
+
+        <!---------------------- категории уточек: ---------------------------->
+        <!--------------------------------------------------------------------->
+        <ul
+          class="w-auto h-auto min-w-[152px] min-h-[252px] flex flex-col justify-center gap-3 absolute top-[512px] left-4 md:w-[928px] md:min-h-[32px] md:flex-row md:gap-6 md:top-[584px] xl:w-[1248px] xl:gap-[44px] xl:top-[676px]"
+        >
+          <li
+            class="w-auto h-auto min-w-[152px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[112px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Классические</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[147px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[107px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Уточки панки</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[135px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[95px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Супергерои</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[95px] min-h-[32px] flex items-center gap-[8px] group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[55px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Милые</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[122px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[82px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Для детей</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[121px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[81px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Взрослым</a
+            >
+          </li>
+        </ul>
+
+        <!-- прозрачный фон (под форму, экраны 1280px): -->
+        <div
+          id="app-main-popup-active-layer"
+          class="w-[375px] h-[800px] absolute top-[0px] bg-gray-300 opacity-70 md:w-[960px] xl:w-[1280px] xl:h-[720px] z-40 xl:block invisible"
+        ></div>
+        <!-- прозрачный фон (под форму, экраны 1280px): -->
+
+        <!---------------------- ПОП-АП ФОРМА: ---------------------------->
+        <!----------------------------------------------------------------->
+        <form
+          id="popup-form"
+          class="w-[344px] h-auto min-h-[320px] flex flex-col gap-5 top-[450px] left-[15px] rounded-[20px] py-5 px-4 absolute bg-[#FFFFFF] z-40 md:left-[308px] md:top-[200px] xl:w-auto xl:min-w-[417px] xl:min-h-[360px] xl:top-[150px] xl:left-[431px] xl:p-10 invisible"
+          action=""
+          method="post"
+        >
+          <fieldset
+            class="w-auto h-auto max-w-[312px] min-h-[194px] flex flex-col gap-3 xl:w-[337px]"
+          >
+            <div
+              class="w-auto h-auto max-w-[312px] min-h-[66px] relative flex flex-col justify-between gap-1 xl:min-w-[337px]"
+            >
+              <label
+                class="w-[46px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
+                for="name"
+                >Имя<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
+                  >*</span
+                ></label
+              >
+              <input
+                class="w-auto max-w-[312px] h-10 rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-4 font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
+                id="name"
+                type="text"
+                placeholder="Введите ваше имя"
+                name="name"
+                maxlength="20"
+                required
+              />
+              <button
+                id="close-popup-btn"
+                type="button"
+                class="w-10 h-10 flex items-center justify-center absolute cursor-pointer left-[285px] top-[-15px] group xl:left-[330px] xl:top-[-30px]"
+              >
+                <svg
+                  class="w-[18px] h-[18px] text-gray-500 group-hover:text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="w-auto h-auto max-w-[312px] min-h-[66px] flex flex-col justify-between gap-[4px] xl:min-w-[337px]"
+            >
+              <label
+                class="w-[81px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
+                for="phone"
+                >Телефон<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
+                  >*</span
+                ></label
+              >
+              <input
+                class="w-auto max-w-[312px] h-10 rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-4 font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
+                id="phone"
+                type="tel"
+                placeholder="+7 000 000 00 00"
+                name="phone"
+                maxlength="20"
+                required
+              />
+            </div>
+
+            <button
+              class="w-auto h-auto min-w-[312px] min-h-[38px] rounded-[8px] py-[10px] px-3 font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] bg-[#EAB308] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer xl:min-w-[337px]"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </fieldset>
+          <p
+            class="w-[312px] h-[66px] font-[inter] font-[400] text-[14px] leading-[22px] tracking-[0%] xl:w-[337px]"
+          >
+            Нажимая кнопку "Отправить", вы соглашаетесь с
+            <a class="text-[#2581EB]" href="#">политикой конфиденциальности</a>
+            и
+            <a class="text-[#2581EB]" href="#">договором оферты</a>
+          </p>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
