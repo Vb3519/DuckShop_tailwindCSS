@@ -15,61 +15,105 @@
     />
   </head>
   <body>
-    <div class="">
-      <section
-        class="w-[375px] h-[800px] absolute flex flex-col bg-[#FFFFFF] md:w-[960px] md:h-[632px] xl:w-[1280px] xl:h-[720px]"
+    <section
+      class="w-[375px] h-[800px] absolute flex flex-col bg-[#FFFFFF] md:w-[960px] md:h-[632px] xl:w-[1280px] xl:h-[720px]"
+    >
+      <!---------------------- ХЕАДЕР: ---------------------------->
+      <!----------------------------------------------------------->
+
+      <!----------------------------------------------------------->
+      <!-- НАВИГАЦИОННОЕ МЕНЮ (1280px): -->
+      <!----------------------------------------------------------->
+      <header
+        class="w-[343px] h-auto min-h-12 top-[5px] left-4 absolute md:w-[928px] md:h-[54px] md:top-4 md:left-4 xl:w-[1248px] xl:h-auto xl:min-h-12 z-40"
       >
-        <!---------------------- ХЕАДЕР: ---------------------------->
-        <!----------------------------------------------------------->
-
-        <!---------------------- меню неактивно (закрыто): -------------------------->
-        <header
-          class="w-[343px] h-auto min-h-[48px] absolute top-[5px] left-[16px] md:w-[928px] md:h-[54px] md:top-[16px] md:left-[16px] xl:w-[1248px] xl:h-auto xl:min-h-[48px]"
+        <div
+          class="w-full h-auto min-h-12 flex justify-between items-center pt-1 pb-1 md:w-full md:min-h-12"
         >
-          <div
-            class="w-full h-auto min-h-[48px] flex justify-between items-center pt-[4px] pb-[4px] md:w-full md:max-w-[92xpx] md:min-h-[48px]"
-          >
-            <div class="w-[178px] h-[40px] flex items-center">
-              <img
-                class="w-[40px] h-[40px]"
-                src="./src/assets/logo.svg"
-                alt="website logo"
-              />
-              <div class="w-[126px] h-[31px] tracking-tighter">
-                <span
-                  class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#EAB308]"
-                  >Duck</span
-                ><span
-                  class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#2581EB]"
-                  >Shop</span
-                >
-              </div>
-            </div>
-
-            <div class="flex items-center">
-              <nav
-                class="xl:w-[620px] xl:h-auto xl:min-h-[38px] xl:flex justify-center hidden"
+          <div class="w-[178px] h-10 flex items-center">
+            <img
+              class="w-10 h-10"
+              src="./src/assets/logo.svg"
+              alt="website logo"
+            />
+            <div class="w-[126px] h-[31px] tracking-tighter">
+              <span
+                class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#EAB308]"
+                >Duck</span
+              ><span
+                class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#2581EB]"
+                >Shop</span
               >
-                <ul
-                  class="w-auto items-center gap-[8px] xl:flex xl:flex-row xl:gap-[20px] font-[inter] font-[500] text-[14px] leading-[20px] tracking-[0.5%]"
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <nav
+              class="xl:w-[620px] xl:h-auto xl:min-h-[38px] xl:flex justify-center hidden"
+            >
+              <ul
+                class="w-auto items-center gap-2 xl:flex xl:flex-row xl:gap-5 font-[inter] font-[500] text-[14px] leading-5 tracking-[0.5%]"
+              >
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[57px] min-h-[38px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer"
                 >
-                  <li
-                    class="w-auto h-auto min-w-[57px] min-h-[38px] rounded-[8px] flex items-center p-[8px] cursor-pointer"
+                  <a
+                    class="w-auto h-auto min-w-[57px] min-h-5 hover:text-[#439FFF]"
+                    src="#"
+                    >Главная</a
                   >
-                    <a
-                      class="w-auto h-auto min-w-[57px] min-h-[20px] hover:text-[#439FFF]"
-                      src="#"
-                      >Главная</a
-                    >
-                  </li>
-                  <li
-                    class="w-auto h-auto min-w-[84px] min-h-[36px] rounded-[8px] flex items-center gap-x-2 p-[8px] cursor-pointer hover:text-[#439FFF]"
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[84px] min-h-[36px] border-b-2 border-solid border-white flex items-center gap-x-2 p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a class="w-auto h-auto min-w-[56px] min-h-5" src="#"
+                    >Каталог</a
                   >
-                    <a class="w-auto h-auto min-w-[56px] min-h-[20px]" src="#"
-                      >Каталог</a
-                    >
+                  <svg
+                    class="w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[33px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Блог</a>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Отзывы</a>
+                </li>
+                <li
+                  class="nav-menu-elem w-auto h-auto min-w-[67px] min-h-[36px] border-b-2 border-solid border-white flex items-center p-2 cursor-pointer hover:text-[#439FFF]"
+                >
+                  <a src="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div
+              class="w-auto h-auto min-w-[92px] min-h-10 md:w-[336px] md:h-10"
+            >
+              <ul class="w-full flex items-center justify-end gap-3 md:gap-5">
+                <li class="w-10 h-10 rounded-[8px]">
+                  <a
+                    class="w-[38px] h-[38px] rounded-[8px] flex items-center justify-center border-1 border-transparent hover:border-[#2581EB] active:border-[#0763CD] group"
+                    href="#"
+                  >
                     <svg
-                      class="w-[16px] h-[16px]"
+                      class="w-4 h-4 group-hover:text-[#2581EB] group-active:text-[#0763CD]"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -80,466 +124,408 @@
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
                       />
                     </svg>
-                  </li>
-                  <li
-                    class="w-auto h-auto min-w-[33px] min-h-[36px] rounded-[8px] flex items-center p-[8px] cursor-pointer hover:text-[#439FFF]"
-                  >
-                    <a src="#">Блог</a>
-                  </li>
-                  <li
-                    class="w-auto h-auto min-w-[56px] min-h-[36px] rounded-[8px] flex items-center p-[8px] cursor-pointer hover:text-[#439FFF]"
-                  >
-                    <a src="#">Отзывы</a>
-                  </li>
-                  <li
-                    class="w-auto h-auto min-w-[67px] min-h-[36px] rounded-[8px] flex items-center p-[8px] cursor-pointer hover:text-[#439FFF]"
-                  >
-                    <a src="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
+                  </a>
+                </li>
 
-              <div
-                class="w-auto h-auto min-w-[92px] min-h-[40px] md:w-[336px] md:h-[40px]"
-              >
-                <ul
-                  class="w-full flex items-center justify-end gap-[12px] md:gap-[20px]"
-                >
-                  <li class="w-[40px] h-[40px] rounded-[8px]">
-                    <a
-                      class="w-[38px] h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[white] hover:border-[#2581EB] active:border-[#0763CD]"
-                      href="#"
+                <li>
+                  <button
+                    class="popup-form-btn w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-3 bg-[#EAB308] cursor-pointer font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] md:block hidden hover:bg-[#FEC71C] active:bg-[#CC9500]"
+                  >
+                    Заказать обратный звонок
+                  </button>
+                </li>
+
+                <li class="w-10 h-10 xl:hidden">
+                  <button
+                    id="menu-btn"
+                    class="min-w-[38px] min-h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[#FFDD55] shadow-[0px_1px_2px_0px_#0000000D] hover:bg-[#FFDD55] active:bg-[#EAB308] cursor-pointer group"
+                  >
+                    <svg
+                      class="w-[19px] h-[19px] group-active:text-[#FFFFFF]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
                     >
-                      <img
-                        class="w-[16px] h-[16px]"
-                        src="./src/assets/shopping_basket.svg"
-                        alt="shopping basket"
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                       />
-                    </a>
-                  </li>
-
-                  <li>
-                    <button
-                      class="w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-[12px] bg-[#EAB308] cursor-pointer font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] md:block hidden hover:bg-[#FEC71C] active:bg-[#CC9500]"
-                    >
-                      Заказать обратный звонок
-                    </button>
-                  </li>
-
-                  <li class="w-[40px] h-[40px] xl:hidden">
-                    <button
-                      class="min-w-[38px] min-h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[#FFDD55] shadow-[0px_1px_2px_0px_#0000000D] hover:bg-[#FFDD55] active:bg-[#EAB308] cursor-pointer"
-                    >
-                      <img
-                        class="w-[16px] h-[16px]"
-                        src="./src/assets/header_btn_icon.svg"
-                        alt="header menu button"
-                      />
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <!------------------------------------------------------------------------->
-        <!---------------------- меню-шторка активно (открыто): ------------------->
-        <!------------------------------------------------------------------------->
-
-        <!-- прозрачный фон (под меню): -->
-        <div
-          class="w-[375px] h-[800px] z-30 absolute bg-gray-800 opacity-70 hidden"
-        ></div>
-        <!-- прозрачный фон (под меню): -->
-
-        <div
-          class="w-[375px] h-[391px] rounded-bl-xl rounded-br-xl flex flex-col gap-[32px] py-[5px] px-[16px] bg-[#FFFFFF] z-40 hidden"
-        >
-          <header class="w-[343px] h-auto min-h-[48px] top-[5px] left-[16px]">
-            <div
-              class="w-full h-auto min-h-[48px] flex justify-between items-center pt-[4px] pb-[4px]"
-            >
-              <div class="w-[178px] height-[40px] flex items-center">
-                <img
-                  class="w-[40px] height-[40px]"
-                  src="./src/assets/logo.svg"
-                  alt="website logo"
-                />
-                <div class="w-[126px] h-[31px] tracking-tighter">
-                  <span
-                    class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#EAB308]"
-                    >Duck</span
-                  ><span
-                    class="font-[inter] font-[700] text-[26px] leading-[100%] tracking-[-3%] text-[#2581EB]"
-                    >Shop</span
-                  >
-                </div>
-              </div>
-              <div class="flex items-center">
-                <nav class="w-auto h-auto min-w-[92px] min-h-[40px]">
-                  <ul class="w-full flex items-center gap-[12px]">
-                    <li class="w-[40px] h-[40px] rounded-[8px]">
-                      <a
-                        class="w-[38px] h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[white] hover:border-[#2581EB] active:border-[#0763CD]"
-                        href="#"
-                      >
-                        <img
-                          class="w-[16px] h-[16px]"
-                          src="./src/assets/shopping_basket.svg"
-                          alt="shopping basket"
-                        />
-                      </a>
-                    </li>
-                    <li class="w-[40px] h-[40px]">
-                      <button
-                        class="min-w-[38px] min-h-[38px] rounded-[8px] flex items-center justify-center border-1 border-[#FFDD55] shadow-[0px_1px_2px_0px_#0000000D] hover:bg-[#FFDD55] active:bg-[#EAB308] cursor-pointer"
-                      >
-                        <img
-                          class="w-[16px] h-[16px]"
-                          src="./src/assets/header_btn_icon.svg"
-                          alt="header menu button"
-                        />
-                      </button>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </header>
-
-          <!---- навигация (меню-шторка): ------>
-          <!------------------------------------>
-          <div
-            class="h-auto w-[343px] min-height-[272px] flex flex-col gap-[20px]"
-          >
-            <nav class="w-auto h-auto min-w-[67px] min-h-[214px]">
-              <ul
-                class="w-auto flex flex-col items-center gap-[8px] font-[Inter] font-[500] text-[14px] leading-[20px] tracking-[0.5%] text-[#1F2937]"
-              >
-                <li
-                  class="w-auto h-auto min-w-[57px] min-h-[38px] flex items-center rounded-[8px] cursor-pointer hover:text-[#2581EB]"
-                >
-                  <a src="#">Главная</a>
-                </li>
-                <li
-                  class="w-auto h-auto min-w-[56px] min-h-[36px] flex items-center rounded-[8px] cursor-pointer hover:text-[#2581EB]"
-                >
-                  <a src="#">Каталог</a>
-                </li>
-                <li
-                  class="w-auto h-auto min-w-[33px] min-h-[36px] flex items-center rounded-[8px] cursor-pointer hover:text-[#2581EB]"
-                >
-                  <a src="#">Блог</a>
-                </li>
-                <li
-                  class="w-auto h-auto min-w-[56px] min-h-[36px] flex items-center rounded-[8px] cursor-pointer hover:text-[#2581EB]"
-                >
-                  <a src="#">Отзывы</a>
-                </li>
-                <li
-                  class="w-auto h-auto min-w-[67px] min-h-[36px] flex items-center rounded-[8px] cursor-pointer hover:text-[#2581EB]"
-                >
-                  <a src="#">Контакты</a>
+                    </svg>
+                  </button>
                 </li>
               </ul>
-            </nav>
-            <button
-              class="w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-[12px] bg-[#EAB308] mx-auto font-[Inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer"
-            >
-              Заказать обратный звонок
-            </button>
+            </div>
           </div>
         </div>
+      </header>
 
-        <!---------------------- МЕИН: ---------------------------->
-        <!--------------------------------------------------------->
-        <main class="w-full">
-          <h1
-            class="font-[jura] font-[700] text-[92px] leading-[80%] tracking-[0px] uppercase text-[#1E1E1E] md:text-[152px]"
+      <!-- прозрачный фон (под меню): -->
+      <div
+        id="app-header-menu-active-layer"
+        class="w-[375px] h-[800px] absolute bg-gray-300 opacity-70 z-10 md:w-[960px] xl:hidden invisible"
+      ></div>
+      <!-- прозрачный фон (под меню): -->
+
+      <!------------------------------------------------->
+      <!---- НАВИГАЦИЯ (МЕНЮ-ШТОРКА 375px, 960px): ------>
+      <!------------------------------------------------->
+      <div
+        id="mobile-menu-container"
+        class="w-[375px] h-[391px] rounded-bl-xl relative rounded-br-xl flex flex-col gap-8 py-[5px] px-4 bg-[#FFFFFF] z-20 md:w-[960px] xl:hidden max-h-0 opacity-0"
+      >
+        <div
+          id="mobile-menu-content"
+          class="h-auto w-[343px] min-height-[272px] absolute top-[85px] flex flex-col gap-5 md:w-[928px] md:top-[70px] opacity-0"
+        >
+          <nav class="w-auto h-auto min-w-[67px] min-h-[214px]">
+            <ul
+              class="w-auto flex flex-col items-center gap-2 font-[Inter] font-[500] text-[14px] leading-5 tracking-[0.5%] text-[#1F2937] md:gap-[30px] md:text-[16px]"
+            >
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[57px] min-h-[38px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Главная</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Каталог</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[33px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Блог</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[56px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Отзывы</a>
+              </li>
+              <li
+                class="nav-menu-elem w-auto h-auto min-w-[67px] min-h-[36px] border-b-2 border-solid border-white flex items-center cursor-pointer hover:text-[#2581EB]"
+              >
+                <a src="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="popup-form-btn w-auto h-auto min-w-[228px] min-h-[38px] rounded-lg py-[10px] px-3 bg-[#EAB308] mx-auto font-[Inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer md:hidden"
           >
-            <span
-              class="w-[297px] h-[74px] inline-block absolute top-[99px] left-[16px] leading-[80%] md:w-[490px] md:h-[122px] md:top-[122px] md:left-[16px] xl:h-[152px] xl:top-[140px] xl:leading-[100%]"
-              >много</span
-            ><span
-              class="w-[333px] h-[74px] inline-block absolute top-[177px] left-[16px] md:w-[550px] md:h-[122px] md:top-[244px] md:left-[16px] xl:h-[152px] xl:top-[232px] xl:left-[714px] xl:leading-[100%]"
-              >уточек</span
-            >
-          </h1>
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
 
-          <div
-            class="w-[343px] h-auto min-h-[86px] flex flex-col absolute top-[283px] left-[16px] gap-[8px] opacity-[80%] md:w-[315px] md:top-[398px] xl:top-[392px] xl:left-[853px] xl:z-10"
+      <!---------------------- МЕИН: ---------------------------->
+      <!--------------------------------------------------------->
+      <main class="w-full">
+        <h1
+          class="font-[jura] font-[700] text-[92px] leading-[80%] tracking-[0px] uppercase text-[#1E1E1E] md:text-[152px]"
+        >
+          <span
+            class="w-[297px] h-[74px] inline-block absolute top-[99px] left-4 leading-[80%] md:w-[490px] md:h-[122px] md:top-[122px] md:left-4 xl:h-[152px] xl:top-[140px] xl:leading-[100%]"
+            >много</span
+          ><span
+            class="w-[333px] h-[74px] inline-block absolute top-[177px] left-4 md:w-[550px] md:h-[122px] md:top-[244px] md:left-4 xl:h-[152px] xl:top-[232px] xl:left-[714px] xl:leading-[100%]"
+            >уточек</span
           >
-            <p
-              class="w-[343px] h-[40px] font-[inter] font-[400] text-[16px] leading-[16px] tracking-[0.5%] text-[#1F2937]"
-            >
-              Маленький друг найдётся для каждого в этом кряквенно жёлтом мире
-            </p>
-            <button
-              class="w-auto h-auto min-w-[156px] min-h-[38px] rounded-[8px] bg-[#2581EB] mr-[auto] py-[10px] px-[12px] font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#439FFF] active:bg-[#0763CD] cursor-pointer"
-            >
-              Смотреть уточек
-            </button>
-          </div>
+        </h1>
 
-          <!---------------------- бэкграунд картинки: ---------------------------->
-          <img
-            class="w-[64px] h-[56px] absolute top-[428px] left-[162px] md:w-[120px] md:h-[108px] md:top-[274px] md:left-[601px] xl:top-[332px] xl:left-[282px]"
-            src="./src/assets/krya.svg"
-          />
-          <img
-            class="w-[343px] h-[343px] absolute top-[307px] left-[185px] md:w-[577px] md:h-[577px] md:top-[62px] md:left-[655px] xl:w-[620px] xl:h-[620px] xl:top-[117px] xl:left-[320px]"
-            src="./public/imgs/background_img.png"
-          />
-
-          <!---------------------- категории уточек: ---------------------------->
-          <ul
-            class="w-auto h-auto min-w-[152px] min-h-[252px] flex flex-col justify-center gap-[12px] absolute top-[512px] left-[16px] md:w-[928px] md:min-h-[32px] md:flex-row md:gap-[24px] md:top-[584px] xl:w-[1248px] xl:gap-[44px] xl:top-[676px]"
+        <div
+          class="w-[343px] h-auto min-h-[86px] flex flex-col absolute top-[283px] left-4 gap-2 opacity-[80%] md:w-[315px] md:top-[398px] xl:top-[392px] xl:left-[853px] xl:z-10"
+        >
+          <p
+            class="w-[343px] h-10 font-[inter] font-[400] text-[16px] leading-[16px] tracking-[0.5%] text-[#1F2937]"
           >
-            <li
-              class="w-auto h-auto min-w-[152px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[112px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Классические</a
-              >
-            </li>
-            <li
-              class="w-auto h-auto min-w-[147px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[107px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Уточки панки</a
-              >
-            </li>
-            <li
-              class="w-auto h-auto min-w-[135px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[95px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Супергерои</a
-              >
-            </li>
-            <li
-              class="w-auto h-auto min-w-[95px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[55px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Милые</a
-              >
-            </li>
-            <li
-              class="w-auto h-auto min-w-[122px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[82px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Для детей</a
-              >
-            </li>
-            <li
-              class="w-auto h-auto min-w-[121px] min-h-[32px] flex items-center gap-[8px] group"
-            >
-              <div
-                class="w-[32px] h-[32px] py-[3px] px-[4px] flex items-center justify-center"
-              >
-                <svg
-                  class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </div>
-              <a
-                class="w-[81px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
-                href="#"
-                >Взрослым</a
-              >
-            </li>
-          </ul>
-
-          <!---------------------- ПОП-АП ФОРМА: ---------------------------->
-          <!--------------------------------------------------------------#FFFFFF--->
-          <form
-            class="w-[344px] h-auto min-h-[320px] flex flex-col gap-[20px] top-[450px] left-[15px] rounded-[20px] py-[20px] px-[16px] absolute bg-[#dadada] xl:w-auto xl:min-w-[417px] xl:min-h-[360px] xl:p-[40px]"
-            action=""
-            method="post"
+            Маленький друг найдётся для каждого в этом кряквенно жёлтом мире
+          </p>
+          <button
+            class="w-auto h-auto min-w-[156px] min-h-[38px] rounded-[8px] bg-[#2581EB] mr-[auto] py-[10px] px-3 font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] hover:bg-[#439FFF] active:bg-[#0763CD] cursor-pointer"
           >
-            <fieldset
-              class="w-auto h-auto max-w-[312px] min-h-[194px] flex flex-col gap-[12px] xl:w-[337px]"
-            >
-              <div
-                class="w-auto h-auto max-w-[312px] min-h-[66px] flex flex-col justify-between gap-[4px] xl:min-w-[337px]"
+            Смотреть уточек
+          </button>
+        </div>
+
+        <!---------------------- бэкграунд картинки: ---------------------------->
+        <!----------------------------------------------------------------------->
+        <img
+          class="w-[64px] h-[56px] absolute top-[428px] left-[162px] md:w-[120px] md:h-[108px] md:top-[274px] md:left-[601px] xl:top-[332px] xl:left-[282px]"
+          src="./src/assets/krya.svg"
+        />
+        <img
+          class="w-[343px] h-[343px] absolute top-[307px] left-[185px] md:w-[577px] md:h-[577px] md:top-[62px] md:left-[655px] xl:w-[620px] xl:h-[620px] xl:top-[117px] xl:left-[320px]"
+          src="./public/imgs/background_img.png"
+        />
+
+        <!---------------------- категории уточек: ---------------------------->
+        <!--------------------------------------------------------------------->
+        <ul
+          class="w-auto h-auto min-w-[152px] min-h-[252px] flex flex-col justify-center gap-3 absolute top-[512px] left-4 md:w-[928px] md:min-h-[32px] md:flex-row md:gap-6 md:top-[584px] xl:w-[1248px] xl:gap-[44px] xl:top-[676px]"
+        >
+          <li
+            class="w-auto h-auto min-w-[152px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <label
-                  class="w-[46px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
-                  for="name"
-                  >Имя<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
-                    >*</span
-                  ></label
-                >
-                <input
-                  class="w-auto max-w-[312px] h-[40px] rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-[16px] font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
-                  id="name"
-                  type="text"
-                  placeholder="Введите ваше имя"
-                  name="name"
-                  required
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
-              </div>
-
-              <div
-                class="w-auto h-auto max-w-[312px] min-h-[66px] flex flex-col justify-between gap-[4px] xl:min-w-[337px]"
+              </svg>
+            </div>
+            <a
+              class="w-[112px] h-[20px] font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Классические</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[147px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <label
-                  class="w-[81px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
-                  for="phone"
-                  >Телефон<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
-                    >*</span
-                  ></label
-                >
-                <input
-                  class="w-auto max-w-[312px] h-[40px] rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-[16px] font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
-                  id="phone"
-                  type="tel"
-                  placeholder="+7 000 000 00 00"
-                  name="phone"
-                  required
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
-              </div>
+              </svg>
+            </div>
+            <a
+              class="w-[107px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Уточки панки</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[135px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[95px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Супергерои</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[95px] min-h-[32px] flex items-center gap-[8px] group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[55px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Милые</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[122px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[82px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Для детей</a
+            >
+          </li>
+          <li
+            class="w-auto h-auto min-w-[121px] min-h-8 flex items-center gap-2 group"
+          >
+            <div class="w-8 h-8 py-[3px] px-1 flex items-center justify-center">
+              <svg
+                class="w-[18px] h-[15px] text-[#201F29] group-hover:text-[#439FFF]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </div>
+            <a
+              class="w-[81px] h-5 font-[inter] font-[400] text-[16px] leading-[20px] tracking-[0.5%] group-hover:text-[#439FFF]"
+              href="#"
+              >Взрослым</a
+            >
+          </li>
+        </ul>
 
+        <!-- прозрачный фон (под форму, экраны 1280px): -->
+        <div
+          id="app-main-popup-active-layer"
+          class="w-[375px] h-[800px] absolute top-[0px] bg-gray-300 opacity-70 md:w-[960px] xl:w-[1280px] xl:h-[720px] z-40 xl:block invisible"
+        ></div>
+        <!-- прозрачный фон (под форму, экраны 1280px): -->
+
+        <!---------------------- ПОП-АП ФОРМА: ---------------------------->
+        <!----------------------------------------------------------------->
+        <form
+          id="popup-form"
+          class="w-[344px] h-auto min-h-[320px] flex flex-col gap-5 top-[450px] left-[15px] rounded-[20px] py-5 px-4 absolute bg-[#FFFFFF] z-40 md:left-[308px] md:top-[200px] xl:w-auto xl:min-w-[417px] xl:min-h-[360px] xl:top-[150px] xl:left-[431px] xl:p-10 invisible"
+          action=""
+          method="post"
+        >
+          <fieldset
+            class="w-auto h-auto max-w-[312px] min-h-[194px] flex flex-col gap-3 xl:w-[337px]"
+          >
+            <div
+              class="w-auto h-auto max-w-[312px] min-h-[66px] relative flex flex-col justify-between gap-1 xl:min-w-[337px]"
+            >
+              <label
+                class="w-[46px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
+                for="name"
+                >Имя<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
+                  >*</span
+                ></label
+              >
+              <input
+                class="w-auto max-w-[312px] h-10 rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-4 font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
+                id="name"
+                type="text"
+                placeholder="Введите ваше имя"
+                name="name"
+                maxlength="20"
+                required
+              />
               <button
-                class="w-auto h-auto min-w-[312px] min-h-[38px] rounded-[8px] py-[10px] px-[12px] font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] bg-[#EAB308] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer xl:min-w-[337px]"
-                type="submit"
+                id="close-popup-btn"
+                type="button"
+                class="w-10 h-10 flex items-center justify-center absolute cursor-pointer left-[285px] top-[-15px] group xl:left-[330px] xl:top-[-30px]"
               >
-                Отправить
+                <svg
+                  class="w-[18px] h-[18px] text-gray-500 group-hover:text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
               </button>
-            </fieldset>
-            <p
-              class="w-[312px] h-[66px] font-[inter] font-[400] text-[14px] leading-[22px] tracking-[0%] xl:w-[337px]"
+            </div>
+
+            <div
+              class="w-auto h-auto max-w-[312px] min-h-[66px] flex flex-col justify-between gap-[4px] xl:min-w-[337px]"
             >
-              Нажимая кнопку "Отправить", вы соглашаетесь с
-              <a class="text-[#2581EB]" href="#"
-                >политикой конфиденциальности</a
+              <label
+                class="w-[81px] h-[22px] font-[inter] font-[500] text-[16px] leading-[22px] tracking-[0%]"
+                for="phone"
+                >Телефон<span class="text-[rgb(255,0,0,0.55)] ml-[5px]"
+                  >*</span
+                ></label
               >
-              и
-              <a class="text-[#2581EB]" href="#">договором оферты</a>
-            </p>
-          </form>
-        </main>
-      </section>
-    </div>
+              <input
+                class="w-auto max-w-[312px] h-10 rounded-[14px] border-1 border-[#F1F1F1] py-[10px] px-4 font-[inter] font-[500] text-[14px] leading-[22px] tracking-[0%] bg-[#FFFFFF] outline-0 xl:min-w-[337px]"
+                id="phone"
+                type="tel"
+                placeholder="+7 000 000 00 00"
+                name="phone"
+                maxlength="20"
+                required
+              />
+            </div>
+
+            <button
+              class="w-auto h-auto min-w-[312px] min-h-[38px] rounded-[8px] py-[10px] px-3 font-[inter] font-[600] text-[15px] leading-[100%] tracking-[0.5%] text-[#FFFFFF] bg-[#EAB308] hover:bg-[#FEC71C] active:bg-[#CC9500] cursor-pointer xl:min-w-[337px]"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </fieldset>
+          <p
+            class="w-[312px] h-[66px] font-[inter] font-[400] text-[14px] leading-[22px] tracking-[0%] xl:w-[337px]"
+          >
+            Нажимая кнопку "Отправить", вы соглашаетесь с
+            <a class="text-[#2581EB]" href="#">политикой конфиденциальности</a>
+            и
+            <a class="text-[#2581EB]" href="#">договором оферты</a>
+          </p>
+        </form>
+      </main>
+    </section>
     <script type="module" src="./src/app.js"></script>
   </body>
 </html>
